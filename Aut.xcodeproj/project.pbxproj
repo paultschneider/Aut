@@ -6,8 +6,26 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D3BB88A117B6A1ED00A263AC /* AutAlert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BB889B17B6A1ED00A263AC /* AutAlert.cpp */; };
+		D3BB88A217B6A1ED00A263AC /* AutAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BB889C17B6A1ED00A263AC /* AutAlert.h */; };
+		D3BB88A317B6A1ED00A263AC /* AutAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BB889D17B6A1ED00A263AC /* AutAnim.h */; };
+		D3BB88A417B6A1ED00A263AC /* AutAnimImp.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BB889E17B6A1ED00A263AC /* AutAnimImp.h */; };
+		D3BB88A517B6A1ED00A263AC /* AutRunningAverage.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BB889F17B6A1ED00A263AC /* AutRunningAverage.h */; };
+		D3BB88A617B6A1ED00A263AC /* AutRunningAverageImp.h in Headers */ = {isa = PBXBuildFile; fileRef = D3BB88A017B6A1ED00A263AC /* AutRunningAverageImp.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D3BB889417B6A0D900A263AC /* libAut.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAut.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3BB889B17B6A1ED00A263AC /* AutAlert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutAlert.cpp; sourceTree = "<group>"; };
+		D3BB889C17B6A1ED00A263AC /* AutAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutAlert.h; sourceTree = "<group>"; };
+		D3BB889D17B6A1ED00A263AC /* AutAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutAnim.h; sourceTree = "<group>"; };
+		D3BB889E17B6A1ED00A263AC /* AutAnimImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutAnimImp.h; sourceTree = "<group>"; };
+		D3BB889F17B6A1ED00A263AC /* AutRunningAverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutRunningAverage.h; sourceTree = "<group>"; };
+		D3BB88A017B6A1ED00A263AC /* AutRunningAverageImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutRunningAverageImp.h; sourceTree = "<group>"; };
+		D3BB88AE17B6A29200A263AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3BB88B017B6A29200A263AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3BB88B217B6A29200A263AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +42,13 @@
 		D3BB888B17B6A0D900A263AC = {
 			isa = PBXGroup;
 			children = (
+				D3BB889B17B6A1ED00A263AC /* AutAlert.cpp */,
+				D3BB889C17B6A1ED00A263AC /* AutAlert.h */,
+				D3BB889D17B6A1ED00A263AC /* AutAnim.h */,
+				D3BB889E17B6A1ED00A263AC /* AutAnimImp.h */,
+				D3BB889F17B6A1ED00A263AC /* AutRunningAverage.h */,
+				D3BB88A017B6A1ED00A263AC /* AutRunningAverageImp.h */,
+				D3BB88AD17B6A29200A263AC /* Frameworks */,
 				D3BB889517B6A0D900A263AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,6 +61,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D3BB88AD17B6A29200A263AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3BB88AE17B6A29200A263AC /* SenTestingKit.framework */,
+				D3BB88B017B6A29200A263AC /* UIKit.framework */,
+				D3BB88B217B6A29200A263AC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -43,6 +78,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BB88A217B6A1ED00A263AC /* AutAlert.h in Headers */,
+				D3BB88A317B6A1ED00A263AC /* AutAnim.h in Headers */,
+				D3BB88A417B6A1ED00A263AC /* AutAnimImp.h in Headers */,
+				D3BB88A517B6A1ED00A263AC /* AutRunningAverage.h in Headers */,
+				D3BB88A617B6A1ED00A263AC /* AutRunningAverageImp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BB88A117B6A1ED00A263AC /* AutAlert.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +236,7 @@
 				D3BB889A17B6A0D900A263AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
