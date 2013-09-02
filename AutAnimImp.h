@@ -119,12 +119,6 @@ namespace Aut
     }
     
     template <typename T>
-    std::chrono::seconds Anim<T>::Segment::duration() const
-    {
-        return _m->duration;
-    }
-    
-    template <typename T>
     T Anim<T>::Segment::value0() const
     {
         return _m->val0;
@@ -134,6 +128,12 @@ namespace Aut
     T Anim<T>::Segment::value1() const
     {
         return _m->val1;
+    }
+    
+    template <typename T>
+    std::chrono::seconds Anim<T>::Segment::duration() const
+    {
+        return _m->duration;
     }
     
     //

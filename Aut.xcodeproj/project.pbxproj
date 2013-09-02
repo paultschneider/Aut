@@ -26,6 +26,7 @@
 		D3BB88AE17B6A29200A263AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B017B6A29200A263AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B217B6A29200A263AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3E18CAD17D4397700987C00 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,12 +43,13 @@
 		D3BB888B17B6A0D900A263AC = {
 			isa = PBXGroup;
 			children = (
-				D3BB889B17B6A1ED00A263AC /* AutAlert.cpp */,
 				D3BB889C17B6A1ED00A263AC /* AutAlert.h */,
+				D3BB889B17B6A1ED00A263AC /* AutAlert.cpp */,
 				D3BB889D17B6A1ED00A263AC /* AutAnim.h */,
 				D3BB889E17B6A1ED00A263AC /* AutAnimImp.h */,
 				D3BB889F17B6A1ED00A263AC /* AutRunningAverage.h */,
 				D3BB88A017B6A1ED00A263AC /* AutRunningAverageImp.h */,
+				D3E18CAD17D4397700987C00 /* README.txt */,
 				D3BB88AD17B6A29200A263AC /* Frameworks */,
 				D3BB889517B6A0D900A263AC /* Products */,
 			);

@@ -21,7 +21,7 @@
 // http://opensource.org/licenses/MIT
 
 //
-//  AutRunningAverageImp.h
+// AutRunningAverageImp.h
 //
 // The template definitions in the this header file should be considered
 // private implementation details.
@@ -57,12 +57,6 @@ namespace Aut
     }
 
     template <typename T>
-        size_t RunningAverage<T>::capacity() const
-    {
-        return _m->capacity;
-    }
-
-    template <typename T>
     void RunningAverage<T>::setCapacity(size_t cap)
     {
         _m->capacity = cap;
@@ -71,15 +65,21 @@ namespace Aut
     }
 
     template <typename T>
-    std::chrono::milliseconds RunningAverage<T>::window() const
+    size_t RunningAverage<T>::capacity() const
     {
-        return _m->window;
+        return _m->capacity;
     }
-
+    
     template <typename T>
     void RunningAverage<T>::setWindow(std::chrono::milliseconds win)
     {
         _m->window = win;
+    }
+    
+    template <typename T>
+    std::chrono::milliseconds RunningAverage<T>::window() const
+    {
+        return _m->window;
     }
 
     template <typename T>

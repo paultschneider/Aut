@@ -21,7 +21,7 @@
 // http://opensource.org/licenses/MIT
 
 //
-//  AutAlert.cpp
+// AutAlert.cpp
 //
 
 #include "AutAlert.h"

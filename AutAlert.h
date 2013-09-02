@@ -21,7 +21,10 @@
 // http://opensource.org/licenses/MIT
 
 //
-//  AutAlert.h
+// AutAlert.h
+//
+// Routines for that let a library report warnings and errors, and which let an
+// application specify functions for reporting those warnings and errors.
 //
 
 #ifndef __AutAlert__
@@ -32,9 +35,18 @@
 
 namespace Aut
 {
+    // Report a warning or error.  The text will be displayed (somehow) by the
+    // routines specified by the application.
+    
     void    warning(const std::string& text);
     void    error(const std::string& text);
     void    fatalError(const std::string& text);
+    
+    // Set and get the routines that report the warning and error text.  The
+    // routine for a fatal error is responsible for terminating the application
+    // in an appropriate way (e.g., calling abort()).  The default versions of
+    // these functions write the text to std::cerr, with the version for fatal
+    // errors then calling abort().
     
     void    setWarningFunction(std::function<void(const std::string&)>);
     void    setErrorFunction(std::function<void(const std::string&)>);
