@@ -15,11 +15,20 @@ Aut::RunningAverage<T> is a template class for computing running averages of val
 
 Aut::warning(), Aut::error() and Aut::fatalError() allow code to report warnings and errors (as strings) without worrying about how they will be reported.  Aut::setWarningFunction(), Aut::setErrorFunction() and Aut::setFatalErrorFunction() allow an application to specify the functions that will handle the reporting.  Although there are distinct functions for errors and fatal errors, it is up the the application-specified functions to treat fatal errors differently (e.g., by calling abort()).
 
-A companion project, AutTest, has confidence tests for Aut.
+
+Testing
+
+AutTest is a set of confidence tests for (parts of) Aut.
+
+The test for Aut::RunningAverage<T> does not assume what kind of average is being performed, so the implementation of Aut::RunningAverage<T> could be changed to use some sort of weighting in the average.  The test mainly confirms that values outside the time window do not affect the average.
+
+The test for Aut::Anim<T> is complicated by the way the results to be tested could change with the specific timing of how the test runs.  So the test is limited to waiting until well after the end of a non-cycling animation and then checking that evaluating the animation produces the ending value.  The test does also verify that the template can be instituted for several types.
 
 
 Building
 
 Aut does not depend on any other libraries, other than system libraries that appear by default in Xcode.  The specific version of Xcode used to develop Aut was 4.6.3.
+
+AutTest is set up as another target in the Xcode project for Aut.  The project settings are in the the Aut.xcodeproj/project.pbxproj file.
 
 Aut uses a few C++11 features, like the std::function templates and the std::chrono classes for representing time.  It should not be difficult to remove those features, assuming that an appropriate version of Boost is available to provide replacements for those features.
