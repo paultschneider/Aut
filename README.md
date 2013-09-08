@@ -37,6 +37,6 @@ Aut does not depend on any other libraries, other than system libraries that app
 
 AutTest is set up as another target in the Xcode project for Aut.  This setting and others are stored in Aut.xcodeproj/project.pbxproj.
 
-The project has build setting of "Installation Directory" to "@rpath".  This setting allows the library to be found when it is embedded in an application bundle.  The application should have a build setting of "Runpath Search Paths" to "@loader_path/../Frameworks" and a "Copy Files" build phase to copy the library into the Frameworks section of its bundle.
+The project has a build setting of "Installation Directory" to "@rpath".  This setting allows the library to be found when it is embedded in an application bundle.  The application should have a build setting of "Runpath Search Paths" to "@loader_path/../Frameworks" and a "Copy Files" build phase to copy the library into the Frameworks section of its bundle.
 
 Aut uses a few C++11 features, like the `std::function` templates and the `std::chrono` classes for representing time.  It should not be difficult to remove those features, assuming that an appropriate version of Boost is available to provide replacements for those features.
