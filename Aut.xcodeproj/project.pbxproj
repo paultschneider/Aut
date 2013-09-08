@@ -47,7 +47,7 @@
 		D3BB88AE17B6A29200A263AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B017B6A29200A263AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B217B6A29200A263AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D3E18CAD17D4397700987C00 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D3E18CAD17D4397700987C00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D3B2787817DBCEAF00459DC6 /* src */,
-				D3E18CAD17D4397700987C00 /* README.txt */,
+				D3E18CAD17D4397700987C00 /* README.md */,
 				D3B2787E17DBD00300459DC6 /* AutTest */,
 				D3BB88AD17B6A29200A263AC /* Frameworks */,
 				D3BB889517B6A0D900A263AC /* Products */,
@@ -323,6 +323,7 @@
 				D3B2788517DBD00300459DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3BB888F17B6A0D900A263AC /* Build configuration list for PBXProject "Aut" */ = {
 			isa = XCConfigurationList;
