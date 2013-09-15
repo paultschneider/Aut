@@ -47,6 +47,7 @@
 		D3BB88AE17B6A29200A263AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B017B6A29200A263AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D3BB88B217B6A29200A263AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3DE3C7117E67E5B00067C90 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		D3E18CAD17D4397700987C00 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +98,7 @@
 			children = (
 				D3B2787817DBCEAF00459DC6 /* src */,
 				D3E18CAD17D4397700987C00 /* README.md */,
+				D3DE3C7117E67E5B00067C90 /* LICENSE.txt */,
 				D3B2787E17DBD00300459DC6 /* AutTest */,
 				D3BB88AD17B6A29200A263AC /* Frameworks */,
 				D3BB889517B6A0D900A263AC /* Products */,
